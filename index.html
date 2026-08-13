@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="meta.title">Ibnul Mubarak — Développeur Web Freelance | Sites web qui vendent</title>
+  <meta name="description" content="Développeur web freelance à Garoua, Cameroun. Sites vitrines, boutiques en ligne et landing pages modernes, rapides et 100% mobiles. Devis gratuit en 24h." data-i18n-meta="meta.desc">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%2300d4ff'/><stop offset='1' stop-color='%237c5cff'/></linearGradient></defs><rect width='100' height='100' rx='24' fill='%23060814'/><text x='50' y='68' font-size='52' font-family='Arial' font-weight='bold' fill='url(%23g)' text-anchor='middle'>IM</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ═══════ PRELOADER ═══════ -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-logo">IM</div>
+  </div>
+
+  <!-- ═══════ NAVBAR ═══════ -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#accueil" class="logo"><span class="logo-mark">IM</span> Ibnul&nbsp;Mubarak</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#services" data-i18n="nav.services">Services</a></li>
+        <li><a href="#realisations" data-i18n="nav.realisations">Réalisations</a></li>
+        <li><a href="#apropos" data-i18n="nav.apropos">À propos</a></li>
+        <li><a href="#tarifs" data-i18n="nav.tarifs">Tarifs</a></li>
+        <li><a href="#avis" data-i18n="nav.avis">Avis</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <div class="lang-toggle" id="langToggle" role="button" aria-label="Langue / Language">
+          <span data-lang="fr" class="active">FR</span>
+          <span data-lang="en">EN</span>
+        </div>
+        <a class="btn btn-primary nav-cta" href="#contact" data-i18n="nav.cta">Devis gratuit</a>
+        <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══════ HERO ═══════ -->
+  <header class="hero" id="accueil">
+    <div class="hero-bg">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <span class="hero-badge"><span class="pulse-dot"></span> <span data-i18n="hero.badge">Disponible — nouvelles missions acceptées</span></span>
+        <h1 data-i18n="hero.title">Des sites web qui <span class="grad-text">captivent</span>, des visiteurs qui <span class="grad-text">achètent</span>.</h1>
+        <div class="typewrap"><span data-i18n="hero.typePrefix">Je crée</span> <span class="typewriter" id="typewriter"></span><span class="cursor">|</span></div>
+        <p class="hero-sub" data-i18n="hero.sub">Sites vitrines, boutiques en ligne et landing pages modernes, rapides et 100% mobiles pour les commerces, restaurants, salons et entreprises du Cameroun.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#contact"><i class="fas fa-paper-plane"></i> <span data-i18n="hero.cta1">Demander un devis gratuit</span></a>
+          <a class="btn btn-wa" href="https://wa.me/237691996899?text=Salut%20Ibnul%20Mubarak%2C%20je%20veux%20discuter%20d%27un%20projet%20web." target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+        </div>
+        <div class="hero-trust">
+          <span><i class="fas fa-bolt"></i> <span data-i18n="hero.trust1">Réponse en moins de 24h</span></span>
+          <span><i class="fas fa-shield-halved"></i> <span data-i18n="hero.trust2">Aucun paiement avant validation</span></span>
+        </div>
+        <div class="hero-stats">
+          <div><strong data-count="9">0</strong><span data-i18n="hero.stat1">Projets livrés</span></div>
+          <div><strong>100%</strong><span data-i18n="hero.stat2">Responsive</span></div>
+          <div><strong data-count="7">0</strong><span data-i18n="hero.stat3">Jours de livraison</span></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="photo-ring">
+          <div class="photo-glow"></div>
+          <img src="photo_2026-03-29_09-01-56.jpg" alt="Ibnul Mubarak — Développeur Web Freelance" class="hero-photo">
+        </div>
+        <div class="float-chip chip-1"><i class="fas fa-code"></i> HTML · CSS · JS</div>
+        <div class="float-chip chip-2"><i class="fas fa-rocket"></i> <span data-i18n="hero.chip2">Sites rapides</span></div>
+        <div class="float-chip chip-3"><i class="fas fa-mobile-screen"></i> 100% Mobile</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══════ MARQUEE ═══════ -->
+  <div class="marquee">
+    <div class="marquee-track">
+      <span data-i18n="marquee.1">Sites vitrines</span><i class="fas fa-star"></i>
+      <span data-i18n="marquee.2">Restaurants</span><i class="fas fa-star"></i>
+      <span data-i18n="marquee.3">Salons &amp; tresses</span><i class="fas fa-star"></i>
+      <span data-i18n="marquee.4">Agences</span><i class="fas fa-star"></i>
+      <span data-i18n="marquee.5">Écoles &amp; coran</span><i class="fas fa-star"></i>
+      <span data-i18n="marquee.6">Voyages</span><i class="fas fa-star"></i>
+      <span data-i18n="marquee.7">Boutiques en ligne</span><i class="fas fa-star"></i>
+      <span data-i18n="marquee.8">Horlogerie</span><i class="fas fa-star"></i>
+      <span data-i18n="marquee.1">Sites vitrines</span><i class="fas fa-star"></i>
+      <span data-i18n="marquee.2">Restaurants</span><i class="fas fa-star"></i>
+      <span data-i18n="marquee.3">Salons &amp; tresses</span><i class="fas fa-star"></i>
+      <span data-i18n="marquee.4">Agences</span><i class="fas fa-star"></i>
+      <span data-i18n="marquee.5">Écoles &amp; coran</span><i class="fas fa-star"></i>
+      <span data-i18n="marquee.6">Voyages</span><i class="fas fa-star"></i>
+      <span data-i18n="marquee.7">Boutiques en ligne</span><i class="fas fa-star"></i>
+      <span data-i18n="marquee.8">Horlogerie</span><i class="fas fa-star"></i>
+    </div>
+  </div>
+
+  <!-- ═══════ SERVICES ═══════ -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="tag" data-i18n="services.tag">Mes services</p>
+        <h2 data-i18n="services.title">Ce que je peux faire <span class="grad-text">pour vous</span></h2>
+        <p data-i18n="services.sub">Des solutions sur mesure, pensées pour augmenter votre chiffre d'affaires — pas juste « pour avoir un site ».</p>
+      </div>
+      <div class="services-grid">
+        <article class="service-card reveal">
+          <div class="service-icon"><i class="fas fa-window-restore"></i></div>
+          <h3 data-i18n="services.s1.name">Site Vitrine 1 page</h3>
+          <p data-i18n="services.s1.desc">La présence en ligne parfaite pour commencer : votre activité, vos services et un bouton de contact.</p>
+          <ul>
+            <li><i class="fas fa-check"></i> <span data-i18n="services.s1.f1">Design sur mesure</span></li>
+            <li><i class="fas fa-check"></i> <span data-i18n="services.s1.f2">100% mobile</span></li>
+            <li><i class="fas fa-check"></i> <span data-i18n="services.s1.f3">Bouton WhatsApp</span></li>
+          </ul>
+          <div class="service-price" data-i18n="services.s1.price">10 000 – 15 000 F</div>
+          <a class="btn btn-ghost-sm" href="#contact" data-i18n="services.cta">Demander ce service</a>
+        </article>
+        <article class="service-card popular reveal">
+          <div class="service-tag" data-i18n="services.popular">Le plus demandé</div>
+          <div class="service-icon"><i class="fas fa-globe"></i></div>
+          <h3 data-i18n="services.s2.name">Site 3–5 pages</h3>
+          <p data-i18n="services.s2.desc">Un site complet : Accueil, À propos, Services, Galerie et Contact. Idéal pour bâtir une vraie crédibilité.</p>
+          <ul>
+            <li><i class="fas fa-check"></i> <span data-i18n="services.s2.f1">Jusqu'à 5 pages</span></li>
+            <li><i class="fas fa-check"></i> <span data-i18n="services.s2.f2">Galerie de photos</span></li>
+            <li><i class="fas fa-check"></i> <span data-i18n="services.s2.f3">Formulaire de réservation</span></li>
+          </ul>
+          <div class="service-price" data-i18n="services.s2.price">20 000 – 30 000 F</div>
+          <a class="btn btn-primary" href="#contact" data-i18n="services.cta">Demander ce service</a>
+        </article>
+        <article class="service-card reveal">
+          <div class="service-icon"><i class="fas fa-cart-shopping"></i></div>
+          <h3 data-i18n="services.s3.name">Boutique en ligne</h3>
+          <p data-i18n="services.s3.desc">Vendez vos produits sur Internet : catalogue, panier et commandes reçues directement sur WhatsApp.</p>
+          <ul>
+            <li><i class="fas fa-check"></i> <span data-i18n="services.s3.f1">Catalogue produits</span></li>
+            <li><i class="fas fa-check"></i> <span data-i18n="services.s3.f2">Commandes par WhatsApp</span></li>
+            <li><i class="fas fa-check"></i> <span data-i18n="services.s3.f3">Gestion facile</span></li>
+          </ul>
+          <div class="service-price" data-i18n="services.s3.price">Sur devis</div>
+          <a class="btn btn-ghost-sm" href="#contact" data-i18n="services.cta">Demander ce service</a>
+        </article>
+        <article class="service-card reveal">
+          <div class="service-icon"><i class="fas fa-bullhorn"></i></div>
+          <h3 data-i18n="services.s4.name">Landing page</h3>
+          <p data-i18n="services.s4.desc">Une page unique conçue pour convertir : idéale pour une promo, un lancement ou une campagne.</p>
+          <ul>
+            <li><i class="fas fa-check"></i> <span data-i18n="services.s4.f1">Un message percutant</span></li>
+            <li><i class="fas fa-check"></i> <span data-i18n="services.s4.f2">Appel à l'action clair</span></li>
+            <li><i class="fas fa-check"></i> <span data-i18n="services.s4.f3">Mise en ligne rapide</span></li>
+          </ul>
+          <div class="service-price" data-i18n="services.s4.price">10 000 – 15 000 F</div>
+          <a class="btn btn-ghost-sm" href="#contact" data-i18n="services.cta">Demander ce service</a>
+        </article>
+        <article class="service-card reveal">
+          <div class="service-icon"><i class="fas fa-wand-magic-sparkles"></i></div>
+          <h3 data-i18n="services.s5.name">Refonte &amp; optimisation</h3>
+          <p data-i18n="services.s5.desc">Votre site est lent, dépassé ou inutilisable sur mobile ? Je le modernise pour le rendre performant.</p>
+          <ul>
+            <li><i class="fas fa-check"></i> <span data-i18n="services.s5.f1">Design moderne</span></li>
+            <li><i class="fas fa-check"></i> <span data-i18n="services.s5.f2">Vitesse de chargement</span></li>
+            <li><i class="fas fa-check"></i> <span data-i18n="services.s5.f3">Compatibilité mobile</span></li>
+          </ul>
+          <div class="service-price" data-i18n="services.s5.price">Dès 10 000 F</div>
+          <a class="btn btn-ghost-sm" href="#contact" data-i18n="services.cta">Demander ce service</a>
+        </article>
+        <article class="service-card reveal">
+          <div class="service-icon"><i class="fas fa-pen-nib"></i></div>
+          <h3 data-i18n="services.s6.name">Identité visuelle</h3>
+          <p data-i18n="services.s6.desc">Votre logo et vos couleurs, déclinés en une identité cohérente qui inspire confiance dès le premier regard.</p>
+          <ul>
+            <li><i class="fas fa-check"></i> <span data-i18n="services.s6.f1">Création de logo</span></li>
+            <li><i class="fas fa-check"></i> <span data-i18n="services.s6.f2">Choix des couleurs</span></li>
+            <li><i class="fas fa-check"></i> <span data-i18n="services.s6.f3">Fichiers HD livrés</span></li>
+          </ul>
+          <div class="service-price" data-i18n="services.s6.price">Dès 5 000 F</div>
+          <a class="btn btn-ghost-sm" href="#contact" data-i18n="services.cta">Demander ce service</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ RÉALISATIONS ═══════ -->
+  <section class="section section-alt" id="realisations">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="tag" data-i18n="real.tag">Portfolio</p>
+        <h2 data-i18n="real.title">Mes <span class="grad-text">réalisations</span></h2>
+        <p data-i18n="real.sub">Des sites réels, livrés à des clients satisfaits. Cliquez pour visiter chaque projet.</p>
+      </div>
+      <div class="filter-bar reveal">
+        <button class="filter-btn active" data-filter="all" data-i18n="real.fAll">Tous</button>
+        <button class="filter-btn" data-filter="restaurants" data-i18n="real.fResto">Restaurants</button>
+        <button class="filter-btn" data-filter="commerces" data-i18n="real.fCom">Commerces</button>
+        <button class="filter-btn" data-filter="services" data-i18n="real.fServ">Services &amp; éducation</button>
+      </div>
+      <div class="projects-grid" id="projectsGrid">
+
+        <article class="project-card reveal" data-cat="restaurants">
+          <div class="project-visual v-resto1"><i class="fas fa-utensils"></i></div>
+          <div class="project-body">
+            <span class="project-cat" data-i18n="real.be.cat">Restaurant gastronomique</span>
+            <h3 data-i18n="real.be.name">La Belle Époque</h3>
+            <p data-i18n="real.be.desc">Site élégant pour un restaurant haut de gamme : menu, spécialités et réservation.</p>
+            <a class="project-link" data-project="be" href="../Resto_Projrct/index.html" target="_blank" rel="noopener"><span data-i18n="real.see">Voir le projet</span> <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-cat="restaurants">
+          <div class="project-visual v-resto2"><i class="fas fa-drumstick-bite"></i></div>
+          <div class="project-body">
+            <span class="project-cat" data-i18n="real.ts.cat">Restaurant camerounais</span>
+            <h3 data-i18n="real.ts.name">La Table du Sahel</h3>
+            <p data-i18n="real.ts.desc">Restaurant typique de Garoua : carte en FCFA, réservation et commandes par WhatsApp.</p>
+            <a class="project-link" data-project="ts" href="../Resto_Project%202/index.html" target="_blank" rel="noopener"><span data-i18n="real.see">Voir le projet</span> <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-cat="services">
+          <div class="project-visual v-travel"><i class="fas fa-plane"></i></div>
+          <div class="project-body">
+            <span class="project-cat" data-i18n="real.st.cat">Agence de voyage</span>
+            <h3 data-i18n="real.st.name">Sahel Travel</h3>
+            <p data-i18n="real.st.desc">Agence de voyage et pèlerinage : circuits, destinations et demande de réservation.</p>
+            <a class="project-link" data-project="st" href="../Sahel_travel%20Project/index.html" target="_blank" rel="noopener"><span data-i18n="real.see">Voir le projet</span> <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-cat="commerces">
+          <div class="project-visual v-beaute"><i class="fas fa-scissors"></i></div>
+          <div class="project-body">
+            <span class="project-cat" data-i18n="real.bs.cat">Salon de coiffure</span>
+            <h3 data-i18n="real.bs.name">Beauté du Sahel</h3>
+            <p data-i18n="real.bs.desc">Salon de coiffure et tresses à Garoua : prestations, tarifs et prise de rendez-vous.</p>
+            <a class="project-link" data-project="bs" href="../Coiffure%20Project/index.html" target="_blank" rel="noopener"><span data-i18n="real.see">Voir le projet</span> <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-cat="commerces">
+          <div class="project-visual v-alh"><i class="fas fa-mobile-screen"></i></div>
+          <div class="project-body">
+            <span class="project-cat" data-i18n="real.ah.cat">Accessoires &amp; téléphones</span>
+            <h3 data-i18n="real.ah.name">Alhadji Husseini</h3>
+            <p data-i18n="real.ah.desc">Vitrine d'un commerce du Grand Marché de Garoua : produits et contact direct.</p>
+            <a class="project-link" data-project="ah" href="../Alh_husseini%20Project/index.html" target="_blank" rel="noopener"><span data-i18n="real.see">Voir le projet</span> <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-cat="commerces">
+          <div class="project-visual v-montres"><i class="fas fa-clock"></i></div>
+          <div class="project-body">
+            <span class="project-cat" data-i18n="real.ms.cat">Horlogerie &amp; joaillerie</span>
+            <h3 data-i18n="real.ms.name">Montres du Sahel</h3>
+            <p data-i18n="real.ms.desc">Landing page élégante pour la vente de montres et bijoux de luxe.</p>
+            <a class="project-link" data-project="ms" href="../Landing_monter%20Project/index.html" target="_blank" rel="noopener"><span data-i18n="real.see">Voir le projet</span> <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-cat="services">
+          <div class="project-visual v-coran"><i class="fas fa-book-open"></i></div>
+          <div class="project-body">
+            <span class="project-cat" data-i18n="real.ai.cat">École du Saint Coran</span>
+            <h3 data-i18n="real.ai.name">Centre Al Itqan</h3>
+            <p data-i18n="real.ai.desc">Site institutionnel d'une école coranique : présentation, programmes et contact.</p>
+            <a class="project-link" data-project="ai" href="../Goni_Albani%20Project/index.html" target="_blank" rel="noopener"><span data-i18n="real.see">Voir le projet</span> <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-cat="services">
+          <div class="project-visual v-learn"><i class="fas fa-code"></i></div>
+          <div class="project-body">
+            <span class="project-cat" data-i18n="real.lc.cat">Éducation &amp; quiz</span>
+            <h3 data-i18n="real.lc.name">LearnCode</h3>
+            <p data-i18n="real.lc.desc">Plateforme pour apprendre à coder avec un quiz interactif et corrigé.</p>
+            <a class="project-link" data-project="lc" href="../Learn%20to%20Code/index.html" target="_blank" rel="noopener"><span data-i18n="real.see">Voir le projet</span> <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-cat="services">
+          <div class="project-visual v-portfolio"><i class="fas fa-user-tie"></i></div>
+          <div class="project-body">
+            <span class="project-cat" data-i18n="real.pf.cat">Portfolio</span>
+            <h3 data-i18n="real.pf.name">Ce site web</h3>
+            <p data-i18n="real.pf.desc">Le portfolio que vous visitez : design sombre, animations et conversion.</p>
+            <a class="project-link" data-project="pf" href="#accueil"><span data-i18n="real.see">Voir le projet</span> <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ À PROPOS ═══════ -->
+  <section class="section" id="apropos">
+    <div class="container about-grid">
+      <div class="about-visual reveal">
+        <div class="photo-ring about-photo">
+          <div class="photo-glow"></div>
+          <img src="photo_2026-03-29_09-01-56.jpg" alt="Ibnul Mubarak">
+        </div>
+        <div class="about-badge"><i class="fab fa-whatsapp"></i> <span data-i18n="apropos.badge">Disponible en ligne</span></div>
+      </div>
+      <div class="about-text reveal">
+        <p class="tag" data-i18n="apropos.tag">À propos</p>
+        <h2 data-i18n="apropos.title">Ibnul Mubarak <span class="grad-text">— Développeur Web Freelance</span></h2>
+        <p data-i18n="apropos.p1">Basé à Garoua, je crée des sites web qui donnent à votre activité une présence digne de vos ambitions. Pas de blabla technique : je m'occupe de tout, de l'idée jusqu'à la mise en ligne.</p>
+        <p data-i18n="apropos.p2">Mon objectif est simple — <strong>que votre site soit une machine à clients</strong>. Design moderne, chargement rapide, parfait sur téléphone : chaque détail est pensé pour que vos visiteurs passent à l'action.</p>
+        <div class="skill-list">
+          <div class="skill">
+            <div class="skill-top"><span data-i18n="apropos.sk1">HTML5 &amp; Structure</span><span>90%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="90%"></div></div>
+          </div>
+          <div class="skill">
+            <div class="skill-top"><span data-i18n="apropos.sk2">CSS3 &amp; Animations</span><span>85%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="85%"></div></div>
+          </div>
+          <div class="skill">
+            <div class="skill-top"><span data-i18n="apropos.sk3">JavaScript &amp; Interactivité</span><span>75%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="75%"></div></div>
+          </div>
+          <div class="skill">
+            <div class="skill-top"><span data-i18n="apropos.sk4">Responsive &amp; Mobile-first</span><span>95%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="95%"></div></div>
+          </div>
+        </div>
+        <div class="about-features">
+          <div><i class="fas fa-bolt"></i><span data-i18n="apropos.feat1">Livraison rapide</span></div>
+          <div><i class="fas fa-comments"></i><span data-i18n="apropos.feat2">Communication WhatsApp</span></div>
+          <div><i class="fas fa-headset"></i><span data-i18n="apropos.feat3">Support après livraison</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ PROCESS ═══════ -->
+  <section class="section section-alt" id="process">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="tag" data-i18n="process.tag">Comment ça marche</p>
+        <h2 data-i18n="process.title">Votre site en <span class="grad-text">4 étapes</span></h2>
+        <p data-i18n="process.sub">Un processus simple et transparent. Vous savez toujours où en est votre projet.</p>
+      </div>
+      <div class="process-grid">
+        <div class="process-step reveal">
+          <div class="step-num">01</div>
+          <i class="fas fa-comments"></i>
+          <h3 data-i18n="process.p1.name">On discute</h3>
+          <p data-i18n="process.p1.desc">Vous m'expliquez votre activité et vos besoins. Réponse garantie en moins de 24h.</p>
+        </div>
+        <div class="process-step reveal">
+          <div class="step-num">02</div>
+          <i class="fas fa-pen-ruler"></i>
+          <h3 data-i18n="process.p2.name">Je propose le devis</h3>
+          <p data-i18n="process.p2.desc">Un devis clair et détaillé, adapté à votre budget. Aucun paiement avant votre validation.</p>
+        </div>
+        <div class="process-step reveal">
+          <div class="step-num">03</div>
+          <i class="fas fa-laptop-code"></i>
+          <h3 data-i18n="process.p3.name">Je crée votre site</h3>
+          <p data-i18n="process.p3.desc">Design, contenu et fonctionnalités. Vous suivez l'avancement et donnez votre avis.</p>
+        </div>
+        <div class="process-step reveal">
+          <div class="step-num">04</div>
+          <i class="fas fa-rocket"></i>
+          <h3 data-i18n="process.p4.name">Je livre &amp; vous accompagne</h3>
+          <p data-i18n="process.p4.desc">Site livré, fonctionnel et beau. Je reste disponible après la mise en ligne.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ TARIFS ═══════ -->
+  <section class="section" id="tarifs">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="tag" data-i18n="tarifs.tag">Tarifs transparents</p>
+        <h2 data-i18n="tarifs.title">Des prix <span class="grad-text">honnêtes</span>, sans surprise</h2>
+        <p data-i18n="tarifs.sub">Le prix exact dépend de vos besoins. Voici une base claire pour vous projeter.</p>
+      </div>
+      <div class="pricing-grid">
+        <article class="pricing-card reveal">
+          <h3 data-i18n="tarifs.p1.name">Essentiel</h3>
+          <p class="pricing-desc" data-i18n="tarifs.p1.desc">Landing page ou site vitrine 1 page</p>
+          <div class="pricing-price"><strong>10 000</strong><span data-i18n="tarifs.fcfa">FCFA</span></div>
+          <ul>
+            <li><i class="fas fa-check"></i> <span data-i18n="tarifs.p1.f1">1 page professionnelle</span></li>
+            <li><i class="fas fa-check"></i> <span data-i18n="tarifs.p1.f2">Design sur mesure</span></li>
+            <li><i class="fas fa-check"></i> <span data-i18n="tarifs.p1.f3">100% mobile</span></li>
+            <li><i class="fas fa-check"></i> <span data-i18n="tarifs.p1.f4">Bouton WhatsApp</span></li>
+            <li><i class="fas fa-check"></i> <span data-i18n="tarifs.p1.f5">Livré en 3–5 jours</span></li>
+          </ul>
+          <a class="btn btn-ghost-sm" href="#contact" data-i18n="tarifs.cta">Choisir Essentiel</a>
+        </article>
+        <article class="pricing-card featured reveal">
+          <div class="pricing-tag" data-i18n="tarifs.p2.tag">Recommandé</div>
+          <h3 data-i18n="tarifs.p2.name">Business</h3>
+          <p class="pricing-desc" data-i18n="tarifs.p2.desc">Site complet 3–5 pages</p>
+          <div class="pricing-price"><strong>30 000</strong><span data-i18n="tarifs.fcfa">FCFA</span></div>
+          <ul>
+            <li><i class="fas fa-check"></i> <span data-i18n="tarifs.p2.f1">Jusqu'à 5 pages</span></li>
+            <li><i class="fas fa-check"></i> <span data-i18n="tarifs.p2.f2">Galerie de photos</span></li>
+            <li><i class="fas fa-check"></i> <span data-i18n="tarifs.p2.f3">Formulaire de réservation</span></li>
+            <li><i class="fas fa-check"></i> <span data-i18n="tarifs.p2.f4">Google Maps intégré</span></li>
+            <li><i class="fas fa-check"></i> <span data-i18n="tarifs.p2.f5">Livré en 7–10 jours</span></li>
+          </ul>
+          <a class="btn btn-primary" href="#contact" data-i18n="tarifs.cta2">Choisir Business</a>
+        </article>
+        <article class="pricing-card reveal">
+          <h3 data-i18n="tarifs.p3.name">E-commerce</h3>
+          <p class="pricing-desc" data-i18n="tarifs.p3.desc">Boutique en ligne sur mesure</p>
+          <div class="pricing-price"><strong data-i18n="tarifs.p3.on">Sur</strong><span data-i18n="tarifs.p3.devis">devis</span></div>
+          <ul>
+            <li><i class="fas fa-check"></i> <span data-i18n="tarifs.p3.f1">Catalogue produits</span></li>
+            <li><i class="fas fa-check"></i> <span data-i18n="tarifs.p3.f2">Commandes par WhatsApp</span></li>
+            <li><i class="fas fa-check"></i> <span data-i18n="tarifs.p3.f3">Design premium</span></li>
+            <li><i class="fas fa-check"></i> <span data-i18n="tarifs.p3.f4">Support inclus</span></li>
+          </ul>
+          <a class="btn btn-ghost-sm" href="#contact" data-i18n="tarifs.cta3">Demander un devis</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ AVIS ═══════ -->
+  <section class="section section-alt" id="avis">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="tag" data-i18n="avis.tag">Témoignages</p>
+        <h2 data-i18n="avis.title">Ils m'ont fait <span class="grad-text">confiance</span></h2>
+      </div>
+      <div class="reviews-grid">
+        <article class="review-card reveal">
+          <div class="stars">★★★★★</div>
+          <p data-i18n="avis.r1.text">« Mon site est magnifique et rapide. En une semaine mon restaurant avait déjà son site et je reçois des réservations par WhatsApp. »</p>
+          <div class="review-author"><span class="avatar">AH</span><div><strong data-i18n="avis.r1.name">Alhadji Husseini</strong><span data-i18n="avis.r1.role">Vente d'accessoires, Garoua</span></div></div>
+        </article>
+        <article class="review-card reveal">
+          <div class="stars">★★★★★</div>
+          <p data-i18n="avis.r2.text">« Sérieux, rapide et à l'écoute. Il a compris exactement ce que je voulais pour mon salon. Mes clientes adorent la galerie. »</p>
+          <div class="review-author"><span class="avatar">FF</span><div><strong data-i18n="avis.r2.name">Fadimatou F.</strong><span data-i18n="avis.r2.role">Salon de coiffure, Garoua</span></div></div>
+        </article>
+        <article class="review-card reveal">
+          <div class="stars">★★★★★</div>
+          <p data-i18n="avis.r3.text">« Le meilleur rapport qualité-prix de la région. Livré avant la date prévue et il m'a même formé à gérer mon site. »</p>
+          <div class="review-author"><span class="avatar">MS</span><div><strong data-i18n="avis.r3.name">Moussa S.</strong><span data-i18n="avis.r3.role">Centre éducatif, Garoua</span></div></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ CONTACT / DEVIS ═══════ -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="tag" data-i18n="contact.tag">Contact</p>
+        <h2 data-i18n="contact.title">Parlons de <span class="grad-text">votre projet</span></h2>
+        <p data-i18n="contact.sub">Remplissez le formulaire : je vous réponds en moins de 24h avec une proposition claire et gratuite.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="contact-item"><i class="fab fa-whatsapp"></i><div><h4 data-i18n="contact.i1.title">WhatsApp</h4><p><a href="https://wa.me/237691996899" target="_blank" rel="noopener">+237 691 99 68 99</a></p></div></div>
+          <div class="contact-item"><i class="fas fa-envelope"></i><div><h4 data-i18n="contact.i2.title">Email</h4><p><a href="mailto:kassimsouleyman81@gmail.com">kassimsouleyman81@gmail.com</a></p></div></div>
+          <div class="contact-item"><i class="fas fa-location-dot"></i><div><h4 data-i18n="contact.i3.title">Localisation</h4><p data-i18n="contact.i3.value">Garoua, Cameroun</p></div></div>
+          <div class="contact-item"><i class="fas fa-clock"></i><div><h4 data-i18n="contact.i4.title">Disponibilité</h4><p data-i18n="contact.i4.value">Lun – Sam · Réponse en 24h</p></div></div>
+          <div class="contact-social">
+            <a href="https://wa.me/237691996899" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="mailto:kassimsouleyman81@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+        <form class="contact-form reveal" id="devisForm">
+          <div class="form-row">
+            <label data-i18n="contact.f.name">Votre nom <input type="text" id="fName" data-i18n-ph="contact.f.namePh" placeholder="Ex : Ousmane Ali" required></label>
+            <label data-i18n="contact.f.phone">Votre WhatsApp <input type="tel" id="fPhone" data-i18n-ph="contact.f.phonePh" placeholder="Ex : 6XX XX XX XX" required></label>
+          </div>
+          <label data-i18n="contact.f.service">Quel service vous intéresse ?
+            <select id="fService" required>
+              <option value="" data-i18n="contact.f.sChoose">Choisissez un service…</option>
+              <option data-i18n="contact.f.s1">Site Vitrine 1 page</option>
+              <option data-i18n="contact.f.s2">Site 3-5 pages</option>
+              <option data-i18n="contact.f.s3">Boutique en ligne</option>
+              <option data-i18n="contact.f.s4">Landing page</option>
+              <option data-i18n="contact.f.s5">Refonte / Optimisation</option>
+              <option data-i18n="contact.f.s6">Identité visuelle / Logo</option>
+            </select>
+          </label>
+          <label data-i18n="contact.f.budget">Budget estimé ?
+            <select id="fBudget" required>
+              <option value="" data-i18n="contact.f.bChoose">Choisissez une tranche…</option>
+              <option data-i18n="contact.f.b1">Moins de 10 000 F</option>
+              <option data-i18n="contact.f.b2">10 000 – 20 000 F</option>
+              <option data-i18n="contact.f.b3">20 000 – 30 000 F</option>
+              <option data-i18n="contact.f.b4">Plus de 30 000 F</option>
+            </select>
+          </label>
+          <label data-i18n="contact.f.msg">Décrivez votre projet
+            <textarea id="fMessage" rows="4" data-i18n-ph="contact.f.msgPh" placeholder="Parlez-moi de votre activité et de ce que vous souhaitez…" required></textarea>
+          </label>
+          <button type="submit" class="btn btn-primary submit-btn"><i class="fab fa-whatsapp"></i> <span data-i18n="contact.f.submit">Envoyer ma demande sur WhatsApp</span></button>
+          <p class="form-note"><i class="fas fa-lock"></i> <span data-i18n="contact.f.note">Vos informations restent confidentielles. Réponse garantie en moins de 24h.</span></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ CTA FINAL ═══════ -->
+  <section class="final-cta">
+    <div class="container final-cta-inner reveal">
+      <h2 data-i18n="final.title">Prêt à donner à votre activité <span class="grad-text">le site qu'elle mérite ?</span></h2>
+      <p data-i18n="final.sub">Réponse en 24h · Devis gratuit · Aucun engagement</p>
+      <a class="btn btn-primary btn-lg" href="https://wa.me/237691996899?text=Salut%20Ibnul%20Mubarak%2C%20je%20veux%20lancer%20mon%20projet%20web%20maintenant." target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> <span data-i18n="final.cta">Démarrer mon projet</span></a>
+    </div>
+  </section>
+
+  <!-- ═══════ FOOTER ═══════ -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="#accueil" class="logo"><span class="logo-mark">IM</span> Ibnul&nbsp;Mubarak</a>
+        <p data-i18n="footer.desc">Développeur web freelance à Garoua. Des sites modernes, rapides et 100% mobiles qui transforment vos visiteurs en clients.</p>
+      </div>
+      <div>
+        <h4 data-i18n="footer.nav">Navigation</h4>
+        <ul>
+          <li><a href="#services" data-i18n="nav.services">Services</a></li>
+          <li><a href="#realisations" data-i18n="nav.realisations">Réalisations</a></li>
+          <li><a href="#apropos" data-i18n="nav.apropos">À propos</a></li>
+          <li><a href="#tarifs" data-i18n="nav.tarifs">Tarifs</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-i18n="footer.contact">Contact</h4>
+        <ul>
+          <li><a href="https://wa.me/237691996899" target="_blank" rel="noopener">+237 691 99 68 99</a></li>
+          <li><a href="mailto:kassimsouleyman81@gmail.com">kassimsouleyman81@gmail.com</a></li>
+          <li data-i18n="footer.city">Garoua, Cameroun</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span data-i18n="footer.b1">© 2026 Ibnul Mubarak — Tous droits réservés</span>
+      <span data-i18n="footer.b2">Conçu &amp; développé avec <i class="fas fa-heart"></i> par Ibnul Mubarak</span>
+    </div>
+  </footer>
+
+  <!-- ═══════ FLOTTANTS ═══════ -->
+  <a class="wa-float" href="https://wa.me/237691996899?text=Salut%20Ibnul%20Mubarak%2C%20je%20veux%20discuter%20d%27un%20projet." target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+  <button class="to-top" id="toTop" aria-label="Revenir en haut" data-i18n-ar="ui.toTop"><i class="fas fa-arrow-up"></i></button>
+
+  <script src="i18n.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
