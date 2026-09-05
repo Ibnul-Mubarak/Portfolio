@@ -3,19 +3,13 @@
 // ═══════════════════════════════════════════════════════════════
 
 // ═══ 🔗 LIENS DES PROJETS ═══
-// Quand chaque site sera en ligne sur Cloudflare, remplace le lien
-// relatif par son URL de production (ex: https://mon-resto.pages.dev).
-// Le lien local (../...) reste valide pour tester sur ton ordinateur.
+// URLs de production. Modifie ici pour mettre à jour tous les liens.
 const PROJECT_URLS = {
-  be: '../Resto_Projrct/index.html',
-  ts: '../Resto_Project%202/index.html',
-  st: '../Sahel_travel%20Project/index.html',
-  bs: '../Coiffure%20Project/index.html',
-  ah: '../Alh_husseini%20Project/index.html',
-  ms: '../Landing_monter%20Project/index.html',
-  ai: '../Goni_Albani%20Project/index.html',
-  lc: '../Learn%20to%20Code/index.html',
-  pf: '#accueil'
+  st: 'https://sahel-travel-iota.vercel.app/',
+  ah: 'https://btqalhhusseini.rf.gd/',
+  ai: 'https://alitqan.rf.gd/',
+  df: 'https://btqfaisal.rf.gd/',
+  rdv: 'https://rdvsodecoton.rf.gd/'
 };
 
 document.querySelectorAll('[data-project]').forEach((link) => {
@@ -25,13 +19,14 @@ document.querySelectorAll('[data-project]').forEach((link) => {
 
 // ═══ Langue FR / EN ═══
 const typewriterPhrases = {
-  fr: ['des sites vitrines professionnels.', 'des boutiques en ligne qui vendent.', 'des landing pages qui convertissent.', 'des identités visuelles marquantes.'],
-  en: ['professional showcase websites.', 'online stores that sell.', 'landing pages that convert.', 'memorable brand identities.']
+  fr: ['des boutiques qui reçoivent des commandes.', 'des sites qui ramènent des clients.', 'des réservations sur WhatsApp.', 'des plateformes qui font gagner du temps.'],
+  en: ['stores that receive orders.', 'websites that bring clients.', 'bookings straight to WhatsApp.', 'platforms that save time.']
 };
 
 let phraseIndex = 0;
 let charIndex = 0;
 let deleting = false;
+let typeRunId = 0;
 
 let currentLang = localStorage.getItem('im-lang') || 'fr';
 const langSpans = document.querySelectorAll('.lang-toggle [data-lang]');
@@ -65,11 +60,13 @@ function applyLanguage(lang) {
 }
 
 function restartTypewriter() {
+  typeRunId++;
+  const run = typeRunId;
   charIndex = 0;
   deleting = false;
   phraseIndex = 0;
   if (typeEl) typeEl.textContent = '';
-  typeLoop();
+  typeLoop(run);
 }
 
 langSpans.forEach((span) =>
@@ -79,9 +76,15 @@ langSpans.forEach((span) =>
 applyLanguage(currentLang);
 
 // ═══ Preloader ═══
+function hidePreloader() {
+  const p = document.getElementById('preloader');
+  if (p) p.classList.add('hidden');
+}
 window.addEventListener('load', () => {
-  setTimeout(() => document.getElementById('preloader').classList.add('hidden'), 500);
+  setTimeout(hidePreloader, 500);
 });
+// Secours : si load est bloqué par une font/CDN, on cache quand même
+setTimeout(hidePreloader, 3500);
 
 // ═══ Navbar ═══
 const navbar = document.getElementById('navbar');
@@ -101,27 +104,30 @@ document.querySelectorAll('.nav-links a').forEach((link) =>
 document.getElementById('toTop').addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
 // ═══ Typewriter ═══
-function typeLoop() {
+function typeLoop(run) {
+  if (run === undefined) run = typeRunId;
+  if (run !== typeRunId) return;
   const phrases = typewriterPhrases[currentLang];
   const current = phrases[phraseIndex];
+  if (!typeEl) return;
   typeEl.textContent = current.slice(0, charIndex);
   if (!deleting) {
     charIndex++;
     if (charIndex > current.length) {
       deleting = true;
-      setTimeout(typeLoop, 1800);
+      setTimeout(() => typeLoop(run), 1800);
       return;
     }
-    setTimeout(typeLoop, 70);
+    setTimeout(() => typeLoop(run), 70);
   } else {
     charIndex--;
     if (charIndex < 0) {
       deleting = false;
       phraseIndex = (phraseIndex + 1) % phrases.length;
-      setTimeout(typeLoop, 400);
+      setTimeout(() => typeLoop(run), 400);
       return;
     }
-    setTimeout(typeLoop, 35);
+    setTimeout(() => typeLoop(run), 35);
   }
 }
 
@@ -193,6 +199,14 @@ filterBtns.forEach((btn) => {
       const show = filter === 'all' || card.dataset.cat === filter;
       card.classList.toggle('hide', !show);
     });
+  });
+});
+
+// ═══ FAQ : une seule ouverte à la fois ═══
+const faqItems = document.querySelectorAll('.faq-item');
+faqItems.forEach((item) => {
+  item.addEventListener('toggle', () => {
+    if (item.open) faqItems.forEach((other) => { if (other !== item) other.open = false; });
   });
 });
 
